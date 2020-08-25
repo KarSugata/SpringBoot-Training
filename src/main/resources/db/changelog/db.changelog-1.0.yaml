@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+    id: 082420201124-initial-schema
+    author: sugata.kar@sap.com
+    changes:
+      - CreateTable:
+          columns
+            - column:
+              name: id
+              type: bigint
+              autoIncrement: true
+              contsraints:
+                primaryKey: true
+
+            - column:
+              name: message
+              type: VARCHAR(255)
+          tableName: MESSAGE
